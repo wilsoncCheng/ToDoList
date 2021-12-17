@@ -1,0 +1,76 @@
+.container{
+    margin: 3rem auto 3rem auto;
+    padding: 0 12px;
+    width: 80%;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: orange;
+}
+h1{
+    color: white;
+    margin-top: 20px;
+}
+.tab {
+    display: flex;
+    text-align: center;
+    color: gray;
+    font-size: 14px;
+}
+.tab li {
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 2px solid yellow;
+    cursor: pointer;
+    list-style: none;
+    font-weight: bold;
+    font-size:24px;
+}
+.tab li.active {
+    border-bottom: 2px solid black;
+    background: #E37E03;
+    color: white;
+    font-weight: bold;
+}
+.tab li:hover{
+    background: #F39F85;
+}
+.card {
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+    margin:0 auto;
+    padding: 1rem;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  }
+.list{
+    background-color: yellow;
+    line-height: 40px;
+    border-radius: 0.2rem;
+}
+.list li{
+    position: relative;
+    padding-right: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.todo{
+  border: yellow 5px solid;
+  width: 85%;
+  line-height: 50px; 
+  font-size: 24px; 
+  margin-bottom: 24px;
+}
+.choose{
+    height: 32px;
+    border: tomato 2px solid;
+    
+}
+.submit{
+    line-height: 50px; 
+    font-size: 24px;
+    background: brown;
+    color: white;
+    font-weight: bold;
+}
