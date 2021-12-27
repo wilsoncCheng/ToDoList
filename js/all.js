@@ -3,6 +3,27 @@ const choose = document.querySelector('.choose')
 const submit = document.querySelector('.submit')
 let list = document.querySelector('.list')
 let obj = [];
+
+$(document).ready(function () {
+	lightning_one();
+});//end doc.onready function
+
+function lightning_one() {
+	$("#lightning1").fadeIn(1500).fadeOut(1500);
+	setTimeout("lightning_one()", 9000);
+	setTimeout("lightning_two()", 3000);
+	setTimeout("lightning_three()", 6000);
+};
+
+function lightning_two() {
+
+	$(" #lightning2").fadeIn(1500).fadeOut(1500);
+};
+function lightning_three() {
+
+	$("#lightning3").fadeIn(1500).fadeOut(1500);
+};
+
 submit.addEventListener('click', addtodo);
 //輸入產生代辦事項
 function addtodo() {
@@ -43,6 +64,8 @@ function renewscreen() {
             str += `<li>${item.content}<input type="button" data-num=${index} value="刪除" class="delete"></li>`
     })
     list.innerHTML = str;
+    // $("list").fadeOut(3000);
+
 }
 
 //設立刪除機制
